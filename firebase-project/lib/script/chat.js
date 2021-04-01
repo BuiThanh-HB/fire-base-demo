@@ -11,3 +11,6 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
+const root = "my-test-project-be939-default-rtdb/";
+const detail = "detail/";
+const thread = "thread/";

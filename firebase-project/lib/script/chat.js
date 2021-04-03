@@ -15,15 +15,15 @@ const root = "my-test-project-be939-default-rtdb/";
 const detail = "detail/";
 const thread = "thread/";
 $(document).ready(function () {
+  getListChat();
+});
+//Lấy danh sách chat
+function getListChat(searchKey) {
   var ref = database.ref(thread);
 
-  ref.child("abc1").on(
-    "value",
-    (snapshot) => {
+  ref.child("abc1").on( "value",(snapshot) => {
    console.log(snapshot.val())
     },
     (error) => console.log(error),
   );
-});
-//Lấy danh sách chat
-function getListChat(searchKey) {}
+}
